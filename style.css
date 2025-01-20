@@ -399,6 +399,7 @@ footer>div>button{
   background-color: var(--ar-color-1);
   border: var(--ar-color-6) solid 1px;
   border-radius: 5px;
+margin-top: var(--ar-gap-xs);
 }
 
 
