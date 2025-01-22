@@ -318,6 +318,7 @@ margin-top: var(--ar-gap-s);}
   padding: var(--ar-gap-xs);
   margin-top: var(--ar-gap-s);
   width: 800px;
+  margin: var(--ar-margin-s);
 }
 #turismo>h2{
   flex-direction: column;
@@ -357,32 +358,44 @@ font-size: 10px;}
 .vereventos{
   background-color: var(--ar-color-1);
   border: none;
+  height: 30px;
+  padding: var(--ar-padding-s);
+  margin: var(--ar-margin-s);
 }
 .vereventos:hover{
   border-bottom: var(--ar-color-4) solid 3px;
 }
 
 .intereses{
-  margin-top: var(--ar-margin-m);
+  display: flex;
+ padding: var(--ar-padding-s);
+ margin: var(--ar-margin-s);
+ align-items: stretch;
+ 
+}
+.eventos{
+  margin: var(--ar-margin-xs);
+  padding: var(--ar-padding-xs);
 }
 footer{position: absolute;
   top: 2200px;
   width: auto;
   height: 250px;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: stretch;
 }
 footer>div:nth-child(1){
-  width: 500px;
+  width: 40%;
   background-color: var(--ar-color-2);
   gap: var(--ar-gap-s);
  padding: var(--ar-padding-s);
 }
 footer>div:nth-child(2){
-  width: 300px;
+  width: 20%;
 }
 footer>div:nth-child(3){
-  width: 300px;
+  width: 20%;
+  margin: var(--ar-margin-s);
 }
 footer>div>h4{
   padding: var(--ar-padding-s);
@@ -401,7 +414,7 @@ footer>div>button{
   border-radius: 5px;
 margin-top: var(--ar-gap-xs);
 }
-
+.Redes{display: flex;}
 
 
 
@@ -566,8 +579,19 @@ top: 800px;}
   .Thrones>h5{position: absolute;
   top: 530px;}
 .intereses{ position: relative;
-  top:200px;}
+  top:200px;
+flex-direction: column;}
 footer{
-  top: 3500px;
+  top: 3550px;
 }
+footer>div:nth-child(1){
+  width: 100%;
+
 }
+footer>div:nth-child(2){
+  width: 100%;
+}
+footer>div:nth-child(3){
+  width: 100%;
+
+}}
