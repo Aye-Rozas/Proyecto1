@@ -72,6 +72,8 @@ a {
   text-decoration: none;
   color: var(--ar-color-6);
 }
+header>nav#personal>ul>li>img
+{width: 25px;}
 
 .flex-container
 { display: flex;
@@ -101,14 +103,20 @@ display: flex;
 #second>li>a:hover{
   color: var(--ar-color-2);
 }
-  .menu{display: none;}
+
+  .menu{display: none;
+  width: 30px;}
+.lupa{width: 20px;}
 #hero {
   color: var(--ar-color-1);
  border-top: var(--ar-color-4) solid 4px;
 height: 650px;
 }
+
 .navidad{position:absolute;
-z-index: 5;}
+z-index: 5;
+height:650px;
+ width:100%;}
 .navidad:hover{
   filter: saturate(180%);
 }
@@ -159,9 +167,9 @@ border: var(--ar-color-5);
   position: absolute;
   z-index: 4;
   top:800px;
-  height: 650px;
-  /*background-color: yellow;*/
-  grid-template-columns: repeat(4, 1fr);
+  height: 670px;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 200px 200px 200px;
   gap: var(--ar-gap-s);
  
@@ -198,8 +206,8 @@ grid-row: 3/4;
 color: var(--ar-color-1);}
 
 #Destinos>article:nth-child(8)
-{grid-column: 4/5;
-grid-row: 1/1;
+{grid-column: 2/3;
+grid-row: 3/4;
 }
 
 .explore {background-color: var(--ar-color-5);
@@ -212,8 +220,11 @@ margin: var(--ar-gap-xs);
 margin-top: var(--ar-gap-s);
 }
 .explore:hover{background-color: var(--ar-color-4);}
-.titanic{ position: relative;}
+.titanic{ position: relative;
+  width:180px;
+  height:150px;}
 .barco {position: absolute;
+  width:120px;
 top: 50px;
 margin-left: -60px;}
 
@@ -223,18 +234,23 @@ top: 150px;
 margin-left: 10px;
 }
 .Belfast>h3>a{color: var(--ar-color-1);}
-.puente{position: relative;}
+.puente{position: relative;
+  width:150px;
+  height:150px;}
 .estatua{position: absolute;
   top: 50px;
+  width:110px;
 margin-left: -60px;}
 .Dublin>h3{position: absolute;
   top: 150px;
   margin-left: 10px;}
   .Dublin>h3>a{color: var(--ar-color-1);}
-.castillo{position: relative;}
+.castillo{position: relative;
+  width:150px;}
 .mariposa{
   position: absolute;
   top: 260px;
+  width:120px;
   margin-left: -60px;
 }
 .Ancestral>h3{position: absolute;
@@ -244,9 +260,12 @@ margin-left: 10px;}
   color: var(--ar-color-1);
 }
 .kayak{position: relative;/*
-top: 10px;*/}
+top: 10px;*/
+width:150px; 
+height:180px;}
 .plantas{position: absolute;
 top: 260px;
+width:120px;
 margin-left: -60px;}
 
 .corazón>h3{position: absolute;
@@ -255,9 +274,12 @@ top: 350px;}
 
 
 .hombre{position: relative;/*
-top: 20px;*/}
+top: 20px;*/
+width:150px; 
+height:180px;}
 .calzada{position: absolute;
 top: 260px;
+width:120px;
 margin-left:-60px ;}
 .norte>h3{position: absolute;
 top: 350px;
@@ -266,21 +288,24 @@ top: 350px;
 .océano{
   position: relative;
   top: 20px;
+  width:150px; 
+  height:180px;
   margin-left: 3px;
 }
 .gaviotas{position: absolute;
 top: 500px;
+width:120px;
 margin-left: -60px;}
 .Atlántico>h3{position: absolute;
 top: 580px;}
 .lugar{
   text-align: left;
 }
-.Atlántico>h3>a{color: var(--ar-color-1);}
 .lugar>li{
-  gap: var(--ar-gap-m);
   margin: var(--ar-margin-xs);
 }
+.Atlántico>h3>a{color: var(--ar-color-1);}
+
 #Ver{position: relative;
  top: 850px;
   height: 600px;
@@ -312,70 +337,84 @@ margin-top: var(--ar-gap-s);}
 .container1{
   height: 150px;
   display: flex;
-  justify-content: space-between;
+  justify-items: center;
+  justify-content: center;
 }
 #turismo{
   padding: var(--ar-gap-xs);
   margin-top: var(--ar-gap-s);
   width: 800px;
   margin: var(--ar-margin-s);
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-items: center;
+  border: var(--ar-color-4) solid 2px;
 }
 #turismo>h2{
   flex-direction: column;
+  align-items: center;
+ 
 }
 .guinness{
-  margin-right: var(--ar-margin-xs);
+  margin-left: 60px;
 }
-.guinness>img{position: relative;}
+.guinness>img{position: relative;
+  width:80px; 
+  height:80px;}
 .guinness>h5{position: absolute;
-top: 80px;}
+top: 120px;}
 .guinness>h5>a{color: var(--ar-color-1);}
 .cárcel{
-  margin-right: var(--ar-margin-xs);
+  margin-right:40px;
 }
-.cárcel>img{position: relative;}
+.cárcel>img{position: relative;
+  width:80px; 
+  height:80px;}
 .cárcel>h5{position: absolute;
-top: 82px;
+top: 122px;
 font-size: 12px;}
 .cárcel>h5>a{color: var(--ar-color-1);}
 .Blarney{
-  margin-right: var(--ar-margin-xs);
+  margin-right: 40px;
 }
-.Blarney>img{position: relative;}
+.Blarney>img{position: relative;
+  width:80px; 
+  height:80px;}
 .Blarney>h5{position: absolute;
-top: 65px;
+top: 105px;
 font-size: 10px;}
 .Blarney>h5>a{color: var(--ar-color-1);}
-.Thrones>img{position: relative;}
+.Thrones>img{position: relative;
+  width:80px;
+  height:80px;}
 .Thrones>h5{position: absolute;
-top: 70px;
+top: 105px;
 font-size: 10px;}
 .Thrones>h5>a{color: var(--ar-color-1);}
 
-.first>ul>li{
-  margin: var(--ar-margin-xs);
-}
 .vereventos{
   background-color: var(--ar-color-1);
   border: none;
   height: 30px;
   padding: var(--ar-padding-s);
   margin: var(--ar-margin-s);
+  display: flex;
+  margin-top: 100px;
 }
 .vereventos:hover{
   border-bottom: var(--ar-color-4) solid 3px;
 }
 
 .intereses{
-  display: flex;
  padding: var(--ar-padding-s);
- margin: var(--ar-margin-s);
- align-items: stretch;
- 
+ margin: var(--ar-margin-s); 
 }
 .eventos{
-  margin: var(--ar-margin-xs);
+  margin: var(--ar-margin-m);
   padding: var(--ar-padding-xs);
+  gap: var(--ar-gap-s);
+  margin-top: 90px;
 }
 footer{position: absolute;
   top: 2200px;
@@ -392,6 +431,7 @@ footer>div:nth-child(1){
 }
 footer>div:nth-child(2){
   width: 20%;
+  margin: var(--ar-margin-s);
 }
 footer>div:nth-child(3){
   width: 20%;
@@ -415,7 +455,7 @@ footer>div>button{
 margin-top: var(--ar-gap-xs);
 }
 .Redes{display: flex;}
-
+.Redes>li>a>img{width:20px;}
 
 
 
@@ -425,7 +465,7 @@ margin-top: var(--ar-gap-xs);
 
   @media (max-width: 650px) 
   {
-     .menu {
+    .menu {
       display: block;}
 #menu{ flex-direction: column;
   align-items: flex-end;
@@ -439,11 +479,13 @@ top: 550px;}
 #hero>button{top:650px;}
 #Destinos { grid-template-columns: 1fr;
   height: auto;
+  width: auto;
 }
 #Destinos>article:nth-child(1)
 {grid-column: 1/1;
   position: absolute;
   top: 250px;
+height: 30%;
 }
 
 #Destinos>article:nth-child(2)
@@ -565,22 +607,37 @@ top: 800px;}
   }
   #Ver{position: absolute;
     top: 2500px;
+    justify-content: center;
 }   
 #turismo{
   flex-direction: column;
+  flex-wrap: nowrap;
+  height: auto;
+  width: auto;
 }
+#turismo>h2
+{position: relative;
+  top:0px;}
+  .guinness, .cárcel, .Blarney, .Thrones{ margin: 0;}
 .guinness>h5{position: absolute;
   top: 300px;}
+ 
   .cárcel>h5{position: absolute;
   top: 360px;}
+  
   .Blarney>h5{position: absolute;
   top: 440px;
   }
+ 
   .Thrones>h5{position: absolute;
   top: 530px;}
 .intereses{ position: relative;
-  top:200px;
+  top:-30px;
 flex-direction: column;}
+.eventos{
+  position: relative;
+  top:-140px;
+}
 footer{
   top: 3550px;
 }
