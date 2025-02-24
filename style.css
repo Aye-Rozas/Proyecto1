@@ -81,7 +81,7 @@ header>nav#personal>ul>li>img
   align-items:center;
 flex-wrap: wrap;
   gap: var(--ar-gap-s);}
-
+/*HEADER*/
   #personal{
     background-color: var(--ar-secondary-bg);
     justify-content: flex-end;
@@ -107,6 +107,7 @@ display: flex;
   .menu{display: none;
   width: 30px;}
 .lupa{width: 20px;}
+/*SECTION 1 HERO*/
 #hero {
   color: var(--ar-color-1);
  border-top: var(--ar-color-4) solid 4px;
@@ -121,9 +122,8 @@ height:650px;
   filter: saturate(180%);
 }
 #hero>h1
-{
-  position: absolute;
-  z-index: 6;
+{position: absolute;
+ z-index: 6;
 top: 450px;
 margin-left: 130px;
 font-size: 70px;
@@ -140,17 +140,20 @@ text-shadow: 3px 1px 3px black;}
   position: absolute;
   z-index: 8;
   top:600px;
-  margin-left: 130px;
-  background-color: var(--ar-color-5);
+  left: 130px;}
+  /*clase btotones verdes*/
+  .greenbutton
+  {background-color: var(--ar-color-5);
   color: var(--ar-color-6);
-  font-weight: 800;
+  font-weight: 700;
   padding: var(--ar-padding-xs);
 border-radius: 5px;
 border: var(--ar-color-5);
+margin: var(--ar-gap-xs);
 }
-#hero>button:hover{
-  background-color: #00875a;
-}
+.greenbutton:hover{background-color: var(--ar-color-4);}
+
+/*clase grid para section Destinos*/
 .grid-container{
   display: grid;
     align-items: center;
@@ -161,7 +164,7 @@ border: var(--ar-color-5);
     gap: var(--ar-gap-xs);
     padding: var(--ar-padding-xs);
 }
-
+/*SECTION 2 DESTINOS*/
 #Destinos{
   /*border: red solid 5px;*/
   position: absolute;
@@ -172,8 +175,8 @@ border: var(--ar-color-5);
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 200px 200px 200px;
   gap: var(--ar-gap-s);
- 
 }
+/*posicionamiento de la grilla*/
 #Destinos>article:nth-child(1)
 {grid-column: 1/1;}
 
@@ -209,17 +212,7 @@ color: var(--ar-color-1);}
 {grid-column: 2/3;
 grid-row: 3/4;
 }
-
-.explore {background-color: var(--ar-color-5);
-  color: var(--ar-color-6);
-  font-weight: 800;
-  padding: var(--ar-padding-xs);
-border-radius: 5px;
-border: var(--ar-color-5);
-margin: var(--ar-gap-xs);
-margin-top: var(--ar-gap-s);
-}
-.explore:hover{background-color: var(--ar-color-4);}
+/*posicionamiento imagenes,h3 y a de los articulos*/
 .titanic{ position: relative;
   width:180px;
   height:150px;}
@@ -227,12 +220,10 @@ margin-top: var(--ar-gap-s);
   width:120px;
 top: 50px;
 margin-left: -60px;}
-
 .Belfast>h3{
 position: absolute;
 top: 150px;
-margin-left: 10px;
-}
+margin-left: 10px;}
 .Belfast>h3>a{color: var(--ar-color-1);}
 .puente{position: relative;
   width:150px;
@@ -251,30 +242,26 @@ margin-left: -60px;}
   position: absolute;
   top: 260px;
   width:120px;
-  margin-left: -60px;
-}
+  margin-left: -60px;}
 .Ancestral>h3{position: absolute;
+  width: 70px;
 top: 350px;
 margin-left: 10px;}
 .Ancestral>h3>a{
-  color: var(--ar-color-1);
-}
-.kayak{position: relative;/*
-top: 10px;*/
+color: var(--ar-color-1);}
+.kayak{position: relative;
 width:150px; 
 height:180px;}
 .plantas{position: absolute;
 top: 260px;
 width:120px;
 margin-left: -60px;}
-
 .corazón>h3{position: absolute;
-top: 350px;}
+  width: 70px;
+top: 320px;
+font-size: 18px;}
 .corazón>h3>a{color: var(--ar-color-1);}
-
-
-.hombre{position: relative;/*
-top: 20px;*/
+.hombre{position: relative;
 width:150px; 
 height:180px;}
 .calzada{position: absolute;
@@ -282,42 +269,38 @@ top: 260px;
 width:120px;
 margin-left:-60px ;}
 .norte>h3{position: absolute;
-top: 350px;
-}
+  width: 70px;
+top: 350px;}
 .norte>h3>a{color: var(--ar-color-1);}
 .océano{
   position: relative;
   top: 20px;
   width:150px; 
   height:180px;
-  margin-left: 3px;
-}
+  margin-left: 3px;}
 .gaviotas{position: absolute;
 top: 500px;
 width:120px;
 margin-left: -60px;}
 .Atlántico>h3{position: absolute;
+  width: 70px;
 top: 580px;}
 .lugar{
-  text-align: left;
-}
-.lugar>li{
-  margin: var(--ar-margin-xs);
-}
+  text-align: left;}
+.lugar>li{margin: var(--ar-margin-xs);}
 .Atlántico>h3>a{color: var(--ar-color-1);}
-
+/*Section3 Ver*/
 #Ver{position: relative;
  top: 750px;
   height: 600px;
   z-index:-10;
-  /*background-color: yellow;
-  border: solid blue 2px;*/
   align-content: flex-start;
   align-items: flex-start;
 }
+/*1er art del section*/
 .ver{
   width: 300px;
-  height: 120px;
+  height: 160px;
   margin: var(--ar-margin-s);
   padding: var(--ar-padding-s);
   flex-wrap: wrap;
@@ -325,14 +308,6 @@ top: 580px;}
   justify-content: flex-start;
   align-items: flex-start;
 }
-.ver>button{background-color: var(--ar-color-5);
-  color: var(--ar-color-6);
-  font-weight: 800;
-  padding: var(--ar-padding-xs);
-border-radius: 5px;
-border: var(--ar-color-5);
-margin-top: var(--ar-gap-s);}
-.ver>button:hover{background-color:var(--ar-color-4);}
 
 .container1{
   height: 150px;
@@ -341,10 +316,7 @@ margin-top: var(--ar-gap-s);}
   justify-content: center;
 }
 #turismo{
-  padding: var(--ar-gap-xs);
-  margin-top: var(--ar-gap-s);
   width: 800px;
-  margin: var(--ar-margin-s);
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: end;
@@ -363,7 +335,8 @@ margin-top: var(--ar-gap-s);}
   width:80px; 
   height:80px;}
 .guinness>h5{position: absolute;
-top: 120px;}
+  width: 70px;
+top: 110px;}
 .guinness>h5>a{color: var(--ar-color-1);}
 .cárcel{
   margin-right:40px;
@@ -372,7 +345,8 @@ top: 120px;}
   width:80px; 
   height:80px;}
 .cárcel>h5{position: absolute;
-top: 122px;
+  width: 70px;
+top: 105px;
 font-size: 12px;}
 .cárcel>h5>a{color: var(--ar-color-1);}
 .Blarney{
@@ -382,18 +356,22 @@ font-size: 12px;}
   width:80px; 
   height:80px;}
 .Blarney>h5{position: absolute;
-top: 105px;
+  width: 70px;
+top: 95px;
 font-size: 10px;}
 .Blarney>h5>a{color: var(--ar-color-1);}
 .Thrones>img{position: relative;
   width:80px;
   height:80px;}
 .Thrones>h5{position: absolute;
+  width: 70px;
 top: 105px;
 font-size: 10px;}
 .Thrones>h5>a{color: var(--ar-color-1);}
-
+/*cambio de div .intereses , .eventos y .vereventos a aside*/
 .vereventos{
+  position: relative;
+  top:250px;
   background-color: var(--ar-color-1);
   border: none;
   height: 30px;
@@ -407,34 +385,41 @@ font-size: 10px;}
 }
 
 .intereses{
+  position: relative;
+  top: 350px;
  padding: var(--ar-padding-s);
  margin: var(--ar-margin-s); 
 }
 .eventos{
+  position: relative;
+  top: 280px;
   margin: var(--ar-margin-m);
   padding: var(--ar-padding-xs);
   gap: var(--ar-gap-s);
   margin-top: 90px;
 }
 footer{position: absolute;
-  top: 2000px;
+  top: 2010px;
   width: auto;
-  height: 250px;
+  height: auto;
   justify-content: space-around;
   align-items: stretch;
 }
 footer>div:nth-child(1){
   width: 40%;
+  height: auto;
   background-color: var(--ar-color-2);
   gap: var(--ar-gap-s);
  padding: var(--ar-padding-s);
 }
 footer>div:nth-child(2){
   width: 20%;
+  height: auto;
   margin: var(--ar-margin-s);
 }
 footer>div:nth-child(3){
   width: 20%;
+  height: auto;
   margin: var(--ar-margin-s);
 }
 footer>div>h4{
@@ -457,15 +442,33 @@ margin-top: var(--ar-gap-xs);
 .Redes{display: flex;}
 .Redes>li>a>img{width:20px;}
 
+/*se modifican top segun corresponda a responsive*/
+@media (max-width: 1160px) {
+  .guinness>h5{position: absolute;
+  top: 332px;}
+  .cárcel>h5{position: absolute;
+  top: 325px;}
+  .Blarney>h5{position: absolute;
+  top: 318px;
+  }
+  .Thrones>h5{position: absolute;
+  top: 330px;}
+  .intereses{top:500px;}
+  .eventos{top: 500px;}
+  .vereventos{top: 400px;}
 
+footer{
+  top: 2505px;
+}}
+@media (max-width: 870px){.eventos{margin-top:0;}
+@media (max-width: 710px){
+  footer{top:2500px;}
+}
+}
 
-
-
-
-
+/*responsive segun tamaño en que rompre codigo y menu*/
   @media (max-width: 650px) 
-  {
-    .menu {
+  {.menu {
       display: block;}
 #menu{ flex-direction: column;
   align-items: flex-end;
@@ -484,8 +487,10 @@ top: 550px;}
 #Destinos>article:nth-child(1)
 {grid-column: 1/1;
   position: absolute;
-  top: 250px;
+  top: 260px;
 height: 30%;
+width: 220px;
+left: 100px;
 }
 
 #Destinos>article:nth-child(2)
@@ -521,10 +526,7 @@ color: var(--ar-color-1);}
 #Destinos>article:nth-child(8)
 {grid-column: 1/1;
 grid-row: 8/9;
-/*position: absolute;
-top: 1500px;*/
 }
-/**/
 .titanic{ position: absolute;
 top: 420px;}
 .barco {position: absolute;
@@ -571,7 +573,7 @@ margin-left: 80px;}
 
 .corazón>h3{position: absolute;
   z-index: 10;
-top: 1070px;}
+top: 1040px;}
 .corazón>h3>a{color: var(--ar-color-1);}
 
 
@@ -582,7 +584,7 @@ top: 1200px;
 margin-left:80px ;}
 .norte>h3{position: absolute;
   z-index: 10;
-top: 1300px;
+top: 1280px;
 }
 .norte>h3>a{color: var(--ar-color-1);}
 .océano{
@@ -594,7 +596,7 @@ top: 1380px;
 margin-left: 80px;}
 .Atlántico>h3{position: absolute;
   z-index: 10;
-top: 1470px;}
+top: 1450px;}
 .lugar{
   text-align: left;
 }
@@ -631,15 +633,12 @@ top: 800px;}
  
   .Thrones>h5{position: absolute;
   top: 530px;}
-.intereses{ position: relative;
-  top:-30px;
-flex-direction: column;}
-.eventos{
-  position: relative;
-  top:-140px;
-}
+  .intereses{top:2000px;}
+  .eventos{top: 2000px;}
+  .vereventos{top: 2000px;}
+
 footer{
-  top: 3550px;
+  top: 3700px;
 }
 footer>div:nth-child(1){
   width: 100%;
@@ -652,3 +651,44 @@ footer>div:nth-child(3){
   width: 100%;
 
 }}
+/*responsive movile*/
+@media (max-width:450px)
+{
+  #hero>h2 {
+    top: 700px;
+  }
+  #hero>button{top:750px;}
+  #Destinos>article:nth-child(1)
+  {grid-column: 1/1;
+    position: absolute;
+    top: 300px;
+  height: 30%;
+  }
+.titanic{
+top: 460px;}
+.barco {
+top: 460px;
+margin-left: 80px;}
+
+.Belfast>h3{
+top: 570px;
+}
+.puente{
+top: 620px;}
+.estatua{
+  top: 620px;}
+.Dublin>h3{
+  top: 740px;}
+.castillo{
+top: 780px;}
+.mariposa{
+  top: 800px;
+}
+.Ancestral>h3{
+top: 890px;}
+.kayak{
+  top: 970px;}
+.plantas{
+top: 1000px;}
+.vereventos{top: 1900px;}
+}
