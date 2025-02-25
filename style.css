@@ -484,7 +484,7 @@ top: 550px;}
 #hero>h2 {
   top: 600px;
 }
-#hero>a{{top:650px;}
+#hero>a{top:650px;}
 #Destinos { grid-template-columns: 1fr;
   height: auto;
   width: auto;
