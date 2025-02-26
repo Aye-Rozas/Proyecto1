@@ -290,6 +290,10 @@ margin-left: -60px;}
 .Atlántico>h3{position: absolute;
   width: 70px;
 top: 580px;}
+/*se elimina el widthi de las flechas verdes en el html, para ajustar el clase de css*/
+.flechaverde{
+  width: 15px;
+}
 .lugar{
   text-align: left;}
 .lugar>li{margin: var(--ar-margin-xs);}
