@@ -463,14 +463,13 @@ margin-top: var(--ar-gap-xs);
   .vereventos{top: 400px;}
 
 footer{
-  top: 2505px;
+  top: 2300px;
 }}
-@media (max-width: 870px){.eventos{margin-top:0;}
+@media (max-width: 890px){.eventos{margin-top:0;}
+footer{top: 2400px;}}
 @media (max-width: 710px){
   footer{top:2500px;}
 }
-}
-
 /*responsive segun tamaño en que rompre codigo y menu*/
   @media (max-width: 650px) 
   {.menu {
@@ -492,10 +491,11 @@ top: 550px;}
 #Destinos>article:nth-child(1)
 {grid-column: 1/1;
   position: absolute;
-  top: 260px;
+  top: 280px;
 height: 30%;
 width: 220px;
-left: 100px;
+/*left: 100px;*/
+margin-left: 100px;
 }
 
 #Destinos>article:nth-child(2)
@@ -531,49 +531,50 @@ color: var(--ar-color-1);}
 #Destinos>article:nth-child(8)
 {grid-column: 1/1;
 grid-row: 8/9;
+margin-left: 100px;
 }
 .titanic{ position: absolute;
-top: 420px;}
+top: 450px;}
 .barco {position: absolute;
   z-index: 9;
-top: 430px;
+top: 460px;
 margin-left: 80px;}
 
 .Belfast>h3{
 position: absolute;
-top: 540px;
+top: 570px;
 z-index: 10;
 margin-left: 10px;
 }
 .Belfast>h3>a{color: var(--ar-color-1);}
 .puente{position: absolute;
-top: 600px;}
+top: 630px;}
 .estatua{position: absolute;
-  top: 600px;
+  top: 630px;
 margin-left: 80px;}
 .Dublin>h3{position: absolute;
-  top: 720px;
+  top: 750px;
   z-index: 11;
   margin-left: 10px;}
   .Dublin>h3>a{color: var(--ar-color-1);}
 .castillo{position: absolute;
-top: 770px;}
+top: 800px;}
 .mariposa{
   position: absolute;
-  top: 780px;
+  top: 810px;
   margin-left: 80px;
 }
 .Ancestral>h3{position: absolute;
   z-index: 10;
-top: 880px;
+top: 910px;
 margin-left: 10px;}
 .Ancestral>h3>a{
   color: var(--ar-color-1);
 }
 .kayak{position: absolute;
-  top: 970px;}
+  top: 1000px;}
 .plantas{position: absolute;
-top: 1000px;
+top: 1030px;
 margin-left: 80px;}
 
 .corazón>h3{position: absolute;
@@ -583,37 +584,36 @@ top: 1040px;}
 
 
 .hombre{position: absolute;
-top: 1170px;}
+top: 1200px;}
 .calzada{position: absolute;
-top: 1200px;
+top: 1230px;
 margin-left:80px ;}
 .norte>h3{position: absolute;
   z-index: 10;
-top: 1280px;
+top: 1310px;
 }
 .norte>h3>a{color: var(--ar-color-1);}
 .océano{
   position: absolute;
-  top: 1370px;
+  top: 1400px;
 }
 .gaviotas{position: absolute;
-top: 1380px;
+top: 1410px;
 margin-left: 80px;}
 .Atlántico>h3{position: absolute;
   z-index: 10;
-top: 1450px;}
-.lugar{
-  text-align: left;
-}
+top: 1480px;}
 .Atlántico>h3>a{color: var(--ar-color-1);}
 
 .h3lqte{position: relative;
-top: 800px;}
+top: 830px;
+margin-left: 130px;}
 .lugar{ position: absolute;
-  top: 1580px;
+  top: 1610px;
+  margin-left: 130px;
   }
   #Ver{position: absolute;
-    top: 2500px;
+    top: 2520px;
     justify-content: center;
 }   
 #turismo{
@@ -630,17 +630,17 @@ top: 800px;}
   top: 300px;}
  
   .cárcel>h5{position: absolute;
-  top: 360px;}
+  top: 370px;}
   
   .Blarney>h5{position: absolute;
-  top: 440px;
+  top: 450px;
   }
  
   .Thrones>h5{position: absolute;
-  top: 530px;}
+  top: 540px;}
   .intereses{top:2000px;}
   .eventos{top: 2000px;}
-  .vereventos{top: 2000px;}
+  .vereventos{top: 1850px;}
 
 footer{
   top: 3700px;
@@ -662,11 +662,11 @@ footer>div:nth-child(3){
   #hero>h2 {
     top: 700px;
   }
-  #hero>button{top:750px;}
+  #hero>a{top:750px;}
   #Destinos>article:nth-child(1)
   {grid-column: 1/1;
     position: absolute;
-    top: 300px;
+    top: 290px;
   height: 30%;
   }
 .titanic{
@@ -695,5 +695,8 @@ top: 890px;}
   top: 970px;}
 .plantas{
 top: 1000px;}
+#Destinos>article:nth-child(8)
+{margin-left: 60px;
+}
 .vereventos{top: 1900px;}
 }
